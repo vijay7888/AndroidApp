@@ -32,7 +32,8 @@ public static void firstMethod () throws MalformedURLException {
 
 
             // cap.setCapability(MobileCapabilityType.APPLICATION_NAME,"uiautomator");
-            URL url = new URL("http:/localhost:4723/wd/hub");
+        URL url = new URL("http:/localhost:4723/wd/hub");
+
             driver = new AndroidDriver<MobileElement>(url, cap);
             System.out.println("App started ");
 
@@ -50,6 +51,7 @@ public static void firstMethod () throws MalformedURLException {
     driver.findElementsByClassName("android.widget.Button").get(1).click();
     driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
     driver.pressKey(new KeyEvent().withKey(AndroidKey.BACK));
+
 
         }
 
